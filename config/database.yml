@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+
+development:
+  <<: *default
+  database: groundwork_development
+
+test:
+  <<: *default
+  database: groundwork_test
+
+production:
+  <<: *default
+  database: groundwork_production
+
