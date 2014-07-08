@@ -1,0 +1,49 @@
+.github-icon-svg,
+.twitter-icon-svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 3px;
+}
+
+header {
+  background-color: #eee;
+  padding: 50px 50px 0;
+}
+
+body > div {
+  background-color: #eee;
+  padding: 0 50px 50px;
+
+  h2 {
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+  p {
+    font-size: 21px;
+    font-weight: 200;
+  }
+}
+
+
+footer {
+  margin-top: 30px;
+
+  > div {
+    overflow: hidden;
+
+    > ul {
+      float: right;
+      margin-right: 50px;
+    }
+  }
+
+  p {
+    margin-top: 40px;
+    text-align: center;
+    overflow: hidden;
+  }
+}
+

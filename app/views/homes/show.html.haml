@@ -1,2 +1,24 @@
+%header
+  = image_tag('alice.png', class: 'alice')
+  = image_tag('title.png', class: 'title')
 
+%div
+  %h2 We're a new software consultancy.
+
+  %p
+    Interested?
+    = link_to 'Get in touch.', 'mailto:info@buildgroundwork.com'
+
+%footer
+  %div
+    %ul
+      %li= link_to 'info@buildgroundwork.com', 'mailto:info@buildgroundwork.com'
+      %li
+        = render 'homes/github_icon'
+        = link_to 'buildgroundwork', 'http://www.github.com/buildgroundwork'
+      %li
+        = render 'homes/twitter_icon'
+        = link_to 'buildgroundwork', 'http://www.twitter.com/buildgroundwork'
+
+  %p © 2014 Groundwork. Lovingly made in New York City.
 
