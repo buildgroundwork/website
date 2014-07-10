@@ -34,7 +34,7 @@ class RespondWithRedirectMatcher
   def matches?(block)
     block.call
     target_path = @target_path_block.try(:call) || @target_path
-    @response.should @rspec.redirect_to(target_path)
+    @rspec.expect(@response).to @rspec.redirect_to(target_path)
   end
 
   def failure_message
