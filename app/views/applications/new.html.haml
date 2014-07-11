@@ -1,5 +1,11 @@
 = form_for(@application) do |f|
   %dl
+    %dt Name
+    %dd= f.text_field :name
+
+    %dt Email
+    %dd= f.text_field :email
+
     %dt When did you first start programming?  In what language, and in what circumstances?
     %dd= f.text_area :answer1
 
